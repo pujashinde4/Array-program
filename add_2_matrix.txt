@@ -1,0 +1,62 @@
+#include<stdio.h>
+int main()
+{
+    int arr1[3][3],arr2[3][3],arr3[3][3],i,j;
+    printf("enter the element in array 1:");
+    //accepting array1
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+    //Accepting array2
+     printf("\nenter the element in array 2:");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&arr2[i][j]);
+        }
+    }
+    //displaying array1
+    printf("\nelement in array1 is:\n");
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",arr1[i][j]);
+        }
+        printf("\n");
+    }
+    //displaying array2
+     printf("\nelement in array2 is:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",arr2[i][j]);
+        }
+        printf("\n");
+    }
+    //logic for addition two matrices
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            arr3[i][j]=arr1[i][j]+arr2[i][j];
+        }
+    }
+    //final matrix
+    printf("\naddition of two matrices is:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",arr3[i][j]);
+        }
+        printf("\n");
+    }
+}
+    

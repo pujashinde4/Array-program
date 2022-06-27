@@ -1,0 +1,60 @@
+#include<stdio.h>
+int main()
+{
+    int arr1[4][3],i,j,totals=0,totalp,sum_total,total_prod,sum1,prod1;
+    printf("enter the number:");
+    //accepting array
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d", &arr1[i][j]);
+        }
+    }
+    //displaying array
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d", arr1[i][j]);
+        }
+    }
+    //displaying the addition of each row
+     for(i=0;i<4;i++)
+    {
+        sum1=0;
+        for(j=0;j<3;j++)
+        {
+            sum1=sum1+arr1[i][j];
+        }
+        printf("\nvalue of sum1 is: %d", sum1);
+    }
+     //displaying the multiplication of each row
+     for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            prod1=prod1*arr1[i][j];
+        }
+        printf("\nvalue of prod1 is: %d", prod1);
+    }
+    
+    //displaying all sum_total
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            sum_total=totals+arr1[i][j];
+        }
+    }
+    printf("\nvalue of sumtotal is: %d", sum_total);
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            total_prod=totalp*arr1[i][j];
+        }
+    }
+    printf("\nvalue of prodtotal is: %d", total_prod);
+    
+}

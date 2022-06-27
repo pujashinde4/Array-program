@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int arr[10],i;
+    //accepting array
+    printf("enter the numbers:");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    //display array
+    for(i=0;i<10;i++)
+    {
+        printf("%d\n", arr[i]);
+    }
+    //alternet numbers
+    for(i=0;i<10;i++)
+    {
+        printf("%d\t", arr[i]);
+        i++;
+    }
+}

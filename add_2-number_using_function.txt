@@ -1,0 +1,24 @@
+#include <stdio.h>
+void display();
+int add(int, int);
+void display()
+{
+    printf("HELLO ALL..!!!..GOOD MORNING");
+}
+int add(int num1,int num2)
+{
+    return num1+num2;
+}
+    int main()
+    {
+    int num1,num2,sum;
+    display();
+    sum=add(5,4);
+    printf("sum is :%d",sum);
+    printf("\nenter the two number for addition:");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    sum=add(num1,num2);
+    printf("\nsum is %d:",sum);
+   return 0;
+}

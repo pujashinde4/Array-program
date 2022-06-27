@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int arr1[]={12,13,14,56,67,78};
+int *ptr_arr1;
+//ptr_arr1=arr1//points to the base address of array 1
+ptr_arr1=&arr1[0];
+printf("value of arr1[0]:%d\n",arr1[0]);
+printf("address of arr1[0]:%d\n",&arr1[0]);
+printf("value of pointer is:%d\n",ptr_arr1);
+printf("value stored in arr1[0] using %d\n",*ptr_arr1);
+ptr_arr1++;
+printf("value of pointer is:%d\n",ptr_arr1);
+printf("value stored in arr1[0] using %d",*ptr_arr1);
+return 0;
+}

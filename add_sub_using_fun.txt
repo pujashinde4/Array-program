@@ -1,0 +1,42 @@
+#include <stdio.h>
+void display();
+int result=0;//global variable
+int add(int, int);
+int sub(int,int);
+void display()
+{
+    printf("HELLO ALL..!!!..GOOD MORNING");
+}
+int add(int num1,int num2)
+{
+    num1=10;
+    num2=20;
+    int total;
+    total=num1+num2;//total is local variable
+    return num1+num2;
+}
+int sub(int num1,int num2)
+{
+    return num1-num2;
+}
+    int main()
+    {
+    int num1,num2,sum,subb;
+    display();
+    result=add(5,4);
+    printf("sum is :%d",result);
+    printf("\nenter the two number for addition:");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    sum=add(num1,num2);
+    printf("sum is %d:",sum);
+    result=sub(5,4);
+    printf("substraction is;%d",result);
+    printf("\nenter the two number for substraction:");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    subb=sub(num1,num2);
+    printf("substraction is is %d:",subb);
+    
+   return 0;
+}

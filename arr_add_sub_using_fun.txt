@@ -1,0 +1,47 @@
+#include <stdio.h>
+int add_numbers(int arr[2][2], int row,int col);
+int sub_numbers(int arr[2][2], int row,int col);
+int add_numbers(int arr[2][2], int row,int col)
+{
+    int i,j,addition=0;
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            printf("%d",arr[i][j]);
+            addition+= arr[i][j];
+        }
+    }
+    return addition;
+}
+int sub_numbers(int arr[2][2], int row,int col)
+{
+    int i,j,substraction=0;
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            printf("%d",arr[i][j]);
+            substraction-= arr[i][j];
+        }
+    }
+    return substraction;
+}
+int main()
+{
+    int add=0,sub=0,i,j,row,col;
+    int arr[2][2]={{12,34},{45,56}};
+   /* printf("\nenter the value of array:");
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }*/
+    add=add_numbers(arr,2,2);
+    sub=sub_numbers(arr,2,2);
+    printf("\nthe addition is: %d",add);
+    printf("\nthe substraction is %d",sub);
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,count=0;
+    char names[3][15]={"puja shinde","amit khemnar","kartik k"};
+    //displying names
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<15;j++)
+        {
+            if(names[i][j]=='a'||names[i][j]=='e'||names[i][j]=='i'||names[i][j]=='o'||names[i][j]=='u')
+            {
+                 printf("%c",names[i][j]);
+                 count++;
+            }
+        }
+        printf("\n");
+       // printf("%s",names[i]);
+    }
+    return 0;

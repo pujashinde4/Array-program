@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    char greeting[]="hello";
+    char greet[6]={'h','e','l','l','o','\0'};
+    printf("%s\n", greeting);
+    printf("%s", greet);
+    printf("\nsize of greeting is %d\n:",sizeof(greeting));
+    printf("size of greet is %d\n",sizeof(greet));
+    for(i=0;greeting[i]!='\0';i++)
+    {
+        printf("%c",greeting[i]);
+    }
+    for(i=0;greeting[i]!='\0';i++);
+    printf("\tlength is%d",i);
+    printf("\n%s contain %d characters\n",greeting,i);
+    for(i=0;greeting[i]!='\0';i++)
+    {
+        printf("%c",greeting[i]);
+        i++;
+        printf("\t");
+        if(greeting[i]=='\0')
+        {
+            break;
+        }
+    }
+}
+    
